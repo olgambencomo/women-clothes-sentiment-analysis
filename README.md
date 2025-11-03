@@ -141,7 +141,7 @@ Because of its higher contextual accuracy and realistic correlation with ratings
 
 - Customers who recommend products → 88.95% positive sentiment.  
 - Those who don’t recommend → only 50% positive and 19% negative.  
-✅ Indicates that **positive emotions directly drive recommendation behavior**.
+✅ Indicates that positive emotions directly drive recommendation behavior.
 
 ---
 
