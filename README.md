@@ -15,6 +15,25 @@
 [![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-orange?logo=power-bi&logoColor=white)](https://powerbi.microsoft.com/)
 
 
+## Dataset Overview  
+
+The raw dataset includes **23,486 rows** and **10 feature variables**.  
+Each row represents a **customer review** from a women's clothing e-commerce platform.  
+
+| Variable | Description |
+|-----------|--------------|
+| **Clothing ID** | Integer categorical variable that refers to the specific piece being reviewed. |
+| **Age** | Positive integer variable of the reviewer’s age. |
+| **Title** | String variable for the title of the review. |
+| **Review Text** | String variable for the review body. |
+| **Rating** | Ordinal integer variable (1 = Worst, 5 = Best) for the product score given by the customer. |
+| **Recommended IND** | Binary variable indicating if the customer recommends the product (1 = Yes, 0 = No). |
+| **Positive Feedback Count** | Positive integer showing how many customers found this review helpful. |
+| **Division Name** | Categorical variable for the product’s high-level division. |
+| **Department Name** | Categorical variable for the product’s department. |
+| **Class Name** | Categorical variable for the product’s class name. |
+
+
 ## Jupyter Workflow Steps
 
 <details>
@@ -25,7 +44,6 @@
 - Explored key columns: `Review Text`, `Rating`, `Age`, `Department Name`, `Class Name`.
 
 ### 2️⃣ Data Cleaning
-- Dropped unnecessary columns and missing reviews.
 - Removed rows missing product metadata (`Division Name`, `Department Name`, `Class Name`) for accurate aggregation.
 - Cleaned review text:
   - Lowercase, remove URLs, punctuation, numbers, extra spaces.
