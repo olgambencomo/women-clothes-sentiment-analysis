@@ -75,49 +75,87 @@ Each row represents a **customer review** from a women's clothing e-commerce pla
 <details>
 <summary>Click to expand</summary>
 
-The enriched dataset was used to create an interactive Power BI dashboard. Key insights include:
-
-###  Overall Customer Satisfaction
-- 81.9% positive reviews, 4.5% negative → strong trust and satisfaction.  
-- Average star ratings align with sentiment:
-  - Positive → 4.4 stars  
-  - Neutral → 3.4 stars  
-  - Negative → 2.4 stars  
-- Positive reviews are linked to joy, trust, and anticipation.
-
-### Product Performance
-- Dresses → top category (27% of reviews) with highest positive feedback.  
-- Other strong categories: knits, blouses, sweaters.  
-- Low-engagement: shorts, outerwear, lounge items (<2%).  
-- Strategy: Promote cross-selling to increase visibility of low-engagement categories.
-
-###  Customer Demographics
-- 35–44 years → most active (7,400+ reviews).  
-- 18–24 → fewer reviews but high positivity → growth opportunity via social media campaigns.  
-- Engage highly active age groups with loyalty or ambassador programs.
-
-### Sentiment vs. Recommendation
-- Recommenders → 88.95% positive sentiment  
-- Non-recommenders → 50% positive, 19% negative  
-- Insight: Positive emotions strongly drive recommendations.
-
-### Nature of Reviews
-- Positive → mostly subjective (74%), expressing personal appreciation.  
-- Negative → more objective (40%), focused on fit, material, delivery.  
-
-
-###  Strategic Opportunities
-- Product Optimization: Focus on top categories.  
-- Customer Retention: Loyalty programs for 25–44 age segment.  
-- Reputation Management: Address objective negative feedback.  
-- Emotional Branding: Leverage joy and trust in campaigns.  
-- Youth Engagement: Encourage 18–24 participation via social media and referral programs.
+The enriched dataset (22,628 reviews) was used to build an interactive Power BI dashboard that visualizes customer sentiment, product performance, and demographic behavior.  
+The goal was to evaluate sentiment polarity (positive, neutral, negative) and its coherence with star ratings using two NLP models.
 
 ---
 
-###  Final Takeaways
-- Strong brand reputation and high customer satisfaction.  
-- Loyal customer base confirmed by sentiment, ratings, and recommendations.  
-- Opportunities exist to address negative feedback and expand reach to younger audiences.
+###  Model Comparison & Evaluation  
+
+Two sentiment models were compared:  
+- VADER: rule-based model focused on lexical sentiment.  
+- RoBERTa: transformer-based deep learning model with contextual understanding.  
+
+Both achieved a low average error (0.73–0.74) against actual user ratings, confirming a strong alignment between textual sentiment and numeric feedback.
+
+However, VADER showed a positivity bias, classifying over 95% of reviews as positive, underdetecting neutral or subtle negative tones.  
+In contrast, RoBERTa produced a more balanced distribution:
+- 81.9% Positive  
+- 13.6% Neutral  
+- 4.5% Negative  
+
+Because of its higher contextual accuracy and realistic correlation with ratings, RoBERTa was selected as the main model for sentiment analysis.
+
+---
+
+### Overall Customer Satisfaction  
+
+- 81.9% positive reviews and only 4.5% negative → strong brand trust and satisfaction.  
+- Average star ratings match sentiment:  
+  - Positive →  4.4  
+  - Neutral →  3.4  
+  - Negative → 2.4  
+- Positive reviews are often linked with emotions such as joy, trust, and anticipation.  
+
+---
+
+###  Product & Department Performance  
+
+- Top-performing categories: Dresses, Knits, Jeans, Pants, and Blouses.  
+  - These show consistent satisfaction levels and alignment between text and ratings.  
+- Trend department shows the lowest performance (avg rating 3.8), signaling potential issues in fashion expectations or sizing.  
+- Tops, Bottoms, and Intimate departments maintain high satisfaction (82%+ positive, avg rating 4.3).  
+- Popular items like **Dresses and Blouses** generate both praise and criticism — natural polarization for high-volume products.  
+
+ Strategic takeaway: Focus improvement efforts on the Trend department and use highly reviewed products to identify quality or fit issues.
+
+---
+
+### Customer Demographics  
+
+- 35–44 years: most active group (7,400+ reviews).  
+- 18–24 years: fewer reviews but high positivity → growth potential via social media and influencer campaigns.  
+- Target engaged segments (25–44) for loyalty or ambassador programs.  
+
+---
+
+### Review Objectivity & Subjectivity  
+
+- Positive reviews: 74% subjective — emotional appreciation (“Love it!”, “Perfect fit”).  
+- Negative reviews: more objective (40%) — focused on issues like fit, material, or delivery.  
+- Categories like Tops and Dresses show more emotional language, ideal for branding campaigns.  
+
+---
+
+### 🔍 Sentiment vs Recommendation  
+
+- Customers who recommend products → 88.95% positive sentiment.  
+- Those who don’t recommend → only 50% positive and 19% negative.  
+✅ Indicates that **positive emotions directly drive recommendation behavior**.
+
+---
+
+### 💡 Strategic Opportunities  
+
+| Focus Area | Recommendation |
+|-------------|----------------|
+| **Product Optimization** | Prioritize top-performing categories (Dresses, Blouses, Knits). |
+| **Customer Retention** | Build loyalty programs for 25–44 segment. |
+| **Reputation Management** | Address objective negative feedback to improve experience. |
+| **Emotional Branding** | Use joy & trust themes in marketing campaigns. |
+| **Youth Engagement** | Boost 18–24 participation through social media challenges and referral programs. |
+
+
+
 
 </details> 
