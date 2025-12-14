@@ -1,9 +1,9 @@
-# 🛍️ Customer Review Analysis
+# Customer Review Analysis
 
 ##  Project Overview
 
-💡 Goal: Extract insights from customer reviews for better product, marketing, and engagement strategies.  
-📊 Tools: Python, NLP, Sentiment Analysis, Emotion Detection, Power BI.
+Goal: Extract insights from customer reviews for better product, marketing, and engagement strategies.  
+Tools: Python, NLP, Sentiment Analysis, Emotion Detection, Power BI.
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-1.6-green?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
@@ -17,8 +17,8 @@
 
 ## Dataset Overview  
 
-The raw dataset includes **23,486 rows** and **10 feature variables**.  
-Each row represents a **customer review** from a women's clothing e-commerce platform.  
+The raw dataset includes 23,486 rows and 10 feature variables.  
+Each row represents a customer review from a women's clothing e-commerce platform.  
 
 | Variable | Description |
 |-----------|--------------|
@@ -56,7 +56,7 @@ Each row represents a **customer review** from a women's clothing e-commerce pla
 - **TextBlob:** Subjectivity score → `Subjective` vs `Objective`.
 
 ### 4️⃣ Emotion Detection
-- **NRCLex** to detect all emotions in reviews (`Emotions`).  
+- NRCLex to detect all emotions in reviews (`Emotions`).  
 - Extracted main emotion as `Primary_Emotion`.
 
 ### 5️⃣ Dataset Enrichment & Export
@@ -65,13 +65,13 @@ Each row represents a **customer review** from a women's clothing e-commerce pla
   - Sentiment scores & labels (VADER & RoBERTa).
   - TextBlob subjectivity.
   - Emotions & primary emotion.
-- Exported to **Excel**, ready for Power BI dashboards.
+- Exported to Excel, ready for Power BI dashboards.
 
 </details>
 
 ---
 
-## 📊 Power BI Dashboard & Key Insights
+## Power BI Dashboard & Key Insights
 <details>
 <summary>Click to expand</summary>
 
@@ -137,7 +137,7 @@ Because of its higher contextual accuracy and realistic correlation with ratings
 
 ---
 
-### 🔍 Sentiment vs Recommendation  
+### Sentiment vs Recommendation  
 
 - Customers who recommend products → 88.95% positive sentiment.  
 - Those who don’t recommend → only 50% positive and 19% negative.  
